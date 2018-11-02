@@ -4,8 +4,8 @@ import './house.css'
 export default function House(props) {
   return (
     <div className="house">
-      <h3></h3>
-      <button onClick={() => props.deleteHouse(props.id)}>x</button>
+      <h3>Home</h3>
+      <button onClick={() => props.deleteHouse(props.id)}>Delete</button>
       <p>{props.name}</p>
       <p>{props.address}</p>
       <p>{props.city}</p>

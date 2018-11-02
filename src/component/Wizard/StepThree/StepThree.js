@@ -52,7 +52,8 @@ import axios from 'axios';
   render() {
     return (
       <div>
-              <h2>Add New Listing</h2>
+
+        <h2>Add New Listing</h2>
         <p>Recommended Rent:</p>
 
         <p>Monthly Mortgage Amount</p>

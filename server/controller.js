@@ -8,27 +8,26 @@ getAllHouses: ( req, res ) => {
 
     .then(response => res.status(200).send(response))
     .catch(err => {
-        res.status(500).send({errorMessage: "Server Side Error: Can't fight it can't take it!"})
+        res.status(500).send({errorMessage: "Server Side Error: Can't fight this feeling any longer!"})
         console.log(err)
     });
 },
 
 createHouse: (req, res) => {
     const dbInstance = req.app.get("db");
-    const {name, address, city, state, zip, 
-            img, mortgage, rent} = req.body;    //destruct
-        console.log(req.body);
 
-    dbInstance.create_house([name, address, city, state, zip, img, mortgage, rent])
-    .then( () => res.sendStatus(200))
+    const {name, address, city, state, zip, img, mortgage, rent} = req.body;    //destruct
+
+        console.log("this is req.body", req.body);
+
+    dbInstance.create_house(name, address, city, state, zip, img, mortgage, rent)
+
+    .then(() => res.sendStatus(200))
     .catch( err => {
         res.status(500).send({errorMessage: "Server Error: Can't create_house to db"})
         console.log(err)
     });
 },
-
-
-
 
 
 

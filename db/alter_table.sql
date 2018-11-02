@@ -1,0 +1,1 @@
+ALTER TABLE houses MODIFY img_url text;
