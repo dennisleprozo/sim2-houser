@@ -1,5 +1,16 @@
 .dash {
-    display: inline-block;
+    display: flex;
+    align-content: left;
 
 
+}
+
+h3 {
+    color: #333;
+    display: flex;
+    left: 100px;
+}
+
+button {
+    background: #8AEA92;
 }

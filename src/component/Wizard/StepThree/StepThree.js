@@ -21,8 +21,8 @@ import axios from 'axios';
     }
     addHouse(){
         let {name, address, city, state, zip, img,  mortgage, rent  } = this.props;
-        
-        console.log(this.props)
+
+        console.log("step three this.props", this.props)
 
         axios.post('/api/house/add', {name, address, city, state, zip ,img,  mortgage, rent  } );
         }

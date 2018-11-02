@@ -1,4 +1,4 @@
-INSERT INTO Houses(
+INSERT INTO houses(
     name, 
     address, 
     city, 
@@ -13,10 +13,3 @@ VALUES
 
 
 
-
-
-
--- Create this table in SQL Tabs
-
-    -- CREATE TABLE Houses(id SERIAL PRIMARY KEY, name VARCHAR(30), address VARCHAR(100), city VARCHAR(100), state VARCHAR(2), zip INTEGER, img TEXT, mortgage DECIMAL, rent DECIMAL
-    -- );  

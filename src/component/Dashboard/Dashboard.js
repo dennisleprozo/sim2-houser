@@ -94,6 +94,7 @@ export default class Dashboard extends Component {
         </div>
 
         <House />
+          <h3>Home Listings</h3>
 
 
         {mappedHouses()}

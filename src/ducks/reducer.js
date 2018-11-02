@@ -1,12 +1,12 @@
 const initialState={
-    name:"",
-    address:"",
-    city:"",
-    state:"",
-    zip:0,
-    img:"",
-    mortgage:0,
-    rent:0,
+    name:"Mansion",
+    address:"89 S 300 E",
+    city:"Richfield",
+    state:"UT",
+    zip:82335,
+    img:"https://raw.githubusercontent.com/DevMountain/simulation-2/master/assets/houser_logo.png",
+    mortgage:2500,
+    rent:31250,
 };
 
 //defining the action

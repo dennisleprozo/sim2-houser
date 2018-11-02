@@ -18,6 +18,7 @@ massive(CONNECTION_STRING)
     })
     .catch(err => console.log(err));
 
+
 app.get('/api/houses', controller.getAllHouses);
 app.post('/api/house/add', controller.createHouse);
 app.delete('/api/house/:id', controller.deleteHouse);

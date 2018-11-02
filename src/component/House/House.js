@@ -1,9 +1,11 @@
 import React from "react";
+import './house.css'
 
 export default function House(props) {
   return (
-    <div>
-      <h3>Home Listings</h3>
+    <div className="house">
+      <h3></h3>
+      <button onClick={() => props.deleteHouse(props.id)}>x</button>
       <p>{props.name}</p>
       <p>{props.address}</p>
       <p>{props.city}</p>
@@ -12,8 +14,7 @@ export default function House(props) {
       <p>{props.image}</p>
       <p>{props.mortgage}</p>
       <p>{props.rent}</p>
-
-      <button onClick={() => props.deleteHouse(props.id)}>Delete</button>
+<hr/>
     </div>
   );
 }
